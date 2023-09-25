@@ -1,0 +1,725 @@
+!DOCTYPE html>
+
+<html lang="en-US" xml:lang="en-US">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Load modeling techniques in distribution networks: a review | Journal of Applied Materials and Technology</title>
+
+
+<meta name="generator" content="Load modeling techniques in distribution networks: a review			| Journal of Applied Materials and Technology	 - jamt ver 1.2 by openjournaltheme.com">	
+<meta name="robots" content="index follow">
+<meta name="googlebot" content="index follow">
+<meta name="description" content="">
+<meta name="og:description" content="">
+<meta name="author" content="Journal of Applied Materials and Technology" />
+<meta name="copyright" content="Journal of Applied Materials and Technology - " />	
+
+
+
+
+
+<link rel="icon" href="https://jamt.ejournal.unri.ac.id/public/journals/1/favicon_en_US.png">
+<meta name="generator" content="Open Journal Systems 3.3.0.7">
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135682633-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-135682633-1');
+</script>-->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.icancee.org/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+<script type="text/javascript" src="//cdn.plu.mx/widget-summary.js"></script>
+<!-- Twitter -->
+<script async src="https://platform.twitter.com/widgets.js"></script>
+<link rel="stylesheet" href="https://jamt.ejournal.unri.ac.id/index.php/jamt/$$$call$$$/page/page/css?name=bootstrap" type="text/css" /><link rel="stylesheet" href="https://jamt.ejournal.unri.ac.id/plugins/themes/jamt/styles/lib/animate.css?v=3.3.0.7" type="text/css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css?v=3.3.0.7" type="text/css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css?v=3.3.0.7" type="text/css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora" type="text/css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css?v=3.3.0.7" type="text/css" /><link rel="stylesheet" href="https://jamt.ejournal.unri.ac.id/plugins/themes/jamt/styles/theme.min.css?v=3.3.0.7" type="text/css" /><link rel="stylesheet" href="https://jamt.ejournal.unri.ac.id/plugins/themes/jamt/styles/theme_custom.css?v=3.3.0.7" type="text/css" /><link rel="stylesheet" href="https://jamt.ejournal.unri.ac.id/plugins/themes/jamt/styles/mobile_responsive.css?v=3.3.0.7" type="text/css" /><link rel="stylesheet" href="https://jamt.ejournal.unri.ac.id/plugins/generic/citations/css/citations.css?v=3.3.0.7" type="text/css" /><link rel="stylesheet" href="https://jamt.ejournal.unri.ac.id/plugins/generic/orcidProfile/css/orcidProfile.css?v=3.3.0.7" type="text/css" />
+
+</head>
+
+
+<body class="pkp_page_article pkp_op_view has_site_logo not_index">
+	<div class="pkp_structure_page">
+
+		<nav id="accessibility-nav" class="sr-only" role="navigation" aria-labelled-by="accessible-menu-label">
+			<div id="accessible-menu-label">
+				Quick jump to page content
+			</div>
+			<ul>
+			  <li><a href="#main-navigation">Main Navigation</a></li>
+			  <li><a href="#main-content">Main Content</a></li>
+			  <li><a href="#sidebar">Sidebar</a></li>
+			</ul>
+		</nav>
+
+				<header class="navbar navbar-default" id="headerNavigationContainer" role="banner" >
+
+						<div class="top_menu">
+			<div class="user_navigation ">
+			<div class="container-fluid">
+				<div class="row mobile-navigation">
+					<nav aria-label="User Navigation">
+						<span class="pull-left site-name-header">
+										
+								<h1 class="site-name">
+						
+								
+							
+
+
+							
+										<a href="									https://jamt.ejournal.unri.ac.id/index.php/index
+										" class="">
+									
+										<img  class="journal_logo"  src="https://jamt.ejournal.unri.ac.id/public/journals/1/pageHeaderLogoImage_en_US.png" alt="##common.pageHeaderLogo.altText##">
+										
+									
+										
+									
+									</a>
+
+										
+								</h1>
+
+
+
+								<div class="navbar-header hamburger-menu-mobile hidden-lg hidden-md">
+
+										<button type="button" class="navbar-toggle  collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false" aria-controls="navbar">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										</button>
+
+										
+
+										</div>
+
+										
+
+								 <div class="journal_title headroom headroom--unpinned">Journal of Applied Materials and Technology </div>
+
+								 	<div class="hidden-lg hidden-md hidden-sm  primary_menu  primary_menu_no_index  container-fluid   ">
+										
+										<nav id="nav-menu" class="navbar-collapse no-padding collapse mobile-dropdown-menu " aria-label="Site Navigation">
+										<ul id="main-navigation" class="nav navbar-nav">
+										<li class=" dropdown">
+				<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					Issues
+										<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu ">
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/issue/view/1">
+										Article In Press
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/issue/current">
+										Current
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/issue/archive">
+										Archives
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/search/search">
+										By Author
+									</a>
+								</li>
+										</ul>
+							</li>
+										<li class="">
+				<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/announcement">
+					Announcements
+									</a>
+							</li>
+										<li class=" dropdown">
+				<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					About
+										<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu ">
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/about">
+										About the Journal
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/focus">
+										Focus and Scope
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/about/submissions">
+										Submissions
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/about/editorialTeam">
+										Editorial Team
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/publisher">
+										Publisher
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/about/privacy">
+										Privacy Statement
+									</a>
+								</li>
+										</ul>
+							</li>
+										<li class=" dropdown">
+				<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					Guidelines
+										<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu ">
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/instructions">
+										Author Guidelines
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/ethicpolicies">
+										Ethic Policies
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/reviewingprocess">
+										Peer Review Process
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/review">
+										Peer Review Policy
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/plagiarism">
+										Plagiarism and Retraction
+									</a>
+								</li>
+										</ul>
+							</li>
+										<li class=" dropdown">
+				<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					Info
+										<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu ">
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/about/contact">
+										Contact
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/visitor">
+										Visitor
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/rights">
+										Rights and License
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/fees">
+										Fees and Waiver Policy
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/oa">
+										Open Access Statement
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/archive">
+										Archiving
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/reviewer">
+										Reviewer
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/citation">
+										Citation
+									</a>
+								</li>
+										</ul>
+							</li>
+										<li class="">
+				<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/user/register">
+					Register
+									</a>
+							</li>
+										<li class="">
+				<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/login">
+					Login
+									</a>
+							</li>
+										<li class="">
+				<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/search/search">
+					Search
+									</a>
+							</li>
+			</ul>
+
+										
+										
+										</nav>
+										
+										</div>
+							
+						</span>
+
+										</nav>
+				</div><!-- .row -->
+			</div><!-- .container-fluid -->
+			</div>
+
+
+			
+			
+
+
+			</div><!-- .pkp_head_wrapper -->
+
+
+
+	
+							<nav id="nav-menu" class=" navbar-collapse no-padding collapse hidden-xs navbar-desktop  nav_article " aria-label="Site Navigation">
+										<ul id="main-navigation" class="nav navbar-nav">
+										<li class=" dropdown">
+				<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					Issues
+										<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu ">
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/issue/view/1">
+										Article In Press
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/issue/current">
+										Current
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/issue/archive">
+										Archives
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/search/search">
+										By Author
+									</a>
+								</li>
+										</ul>
+							</li>
+										<li class="">
+				<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/announcement">
+					Announcements
+									</a>
+							</li>
+										<li class=" dropdown">
+				<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					About
+										<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu ">
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/about">
+										About the Journal
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/focus">
+										Focus and Scope
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/about/submissions">
+										Submissions
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/about/editorialTeam">
+										Editorial Team
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/publisher">
+										Publisher
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/about/privacy">
+										Privacy Statement
+									</a>
+								</li>
+										</ul>
+							</li>
+										<li class=" dropdown">
+				<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					Guidelines
+										<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu ">
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/instructions">
+										Author Guidelines
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/ethicpolicies">
+										Ethic Policies
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/reviewingprocess">
+										Peer Review Process
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/review">
+										Peer Review Policy
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/plagiarism">
+										Plagiarism and Retraction
+									</a>
+								</li>
+										</ul>
+							</li>
+										<li class=" dropdown">
+				<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					Info
+										<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu ">
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/about/contact">
+										Contact
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/visitor">
+										Visitor
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/rights">
+										Rights and License
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/fees">
+										Fees and Waiver Policy
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/oa">
+										Open Access Statement
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/archive">
+										Archiving
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/reviewer">
+										Reviewer
+									</a>
+								</li>
+										<li class="">
+									<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/citation">
+										Citation
+									</a>
+								</li>
+										</ul>
+							</li>
+										<li class="">
+				<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/user/register">
+					Register
+									</a>
+							</li>
+										<li class="">
+				<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/login">
+					Login
+									</a>
+							</li>
+										<li class="">
+				<a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/search/search">
+					Search
+									</a>
+							</li>
+			</ul>
+
+
+
+										<div class="pull-md-right hidden" style="margin-top: -10px">
+								<form class="navbar-form navbar-left search" role="search" method="post" action="https://jamt.ejournal.unri.ac.id/index.php/jamt/search/search">
+  <div class="form-group ">
+    <input class="form-control" name="query" value="" type="text" aria-label="Search Query" placeholder="">
+  </div>
+  <button type="submit" class="btn btn-default"><span class="fa fa-search " aria-hidden="true"></span></button>
+
+</form>
+							</div>
+										</nav>
+				
+	
+
+		
+		</header><!-- .pkp_structure_head -->
+
+
+	
+
+			
+	
+
+	
+
+
+
+				<div class="pkp_structure_content container-fluid main_content main_content_not_index fade_animation">
+			
+			<main class="pkp_structure_main col-md-8 col-xs-12 col-sm-8  box-shadow background-white animated" role="main">
+
+
+<div class="page">
+		<script src="https://jamt.ejournal.unri.ac.id/lib/pkp/lib/vendor/components/jquery/jquery.min.js"></script>
+<script src="https://jamt.ejournal.unri.ac.id/plugins/generic/lensGalley/lib/lens/lens.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript">
+
+	var linkElement = document.createElement("link");
+	linkElement.rel = "stylesheet";
+	linkElement.href = "https://jamt.ejournal.unri.ac.id/plugins/generic/lensGalley/lib/lens/lens.css"; //Replace here
+
+	document.head.appendChild(linkElement);
+
+	$(document).ready(function(){
+		var app = new Lens({
+			document_url: "https://jamt.ejournal.unri.ac.id/index.php/jamt/article/download/10/19/139"
+		});
+		app.start();
+		window.app = app;
+	});
+</script>
+</div>
+
+		
+	</main>
+		<button onclick="topFunction()" id="scrollTop" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+									<aside id="sidebar" class="pkp_structure_sidebar left col-xs-12 col-sm-4 col-md-4 animated" role="complementary" aria-label="Sidebar">
+				<div class="pkp_block block_custom" id="customblock-make_submission">
+	<h2 class="title pkp_screen_reader">make_submission</h2>
+	<div class="content">
+		<p><a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/about/submissions"><img src="/public/site/images/admin/make_submission.jpg"></a></p>
+	</div>
+</div>
+<div class="pkp_block block_custom" id="customblock-editorial-team">
+	<h2 class="title pkp_screen_reader">editorial-team</h2>
+	<div class="content">
+		<div class="editorial_team_block">
+<h1><a title="Editorial Team" href="https://jamt.ejournal.unri.ac.id/index.php/jamt/about/editorialTeam" target="_blank" rel="noopener">Meet Our Editorial Team</a></h1>
+<div class="col-md-4 col-xs-4"><img src="/public/site/images/admin/edy-saputra.jpg"> &nbsp;</div>
+<div class="col-md-8  col-xs-8 profile">
+<div class="name">Prof. Dr. Edy Saputra, S.T., M.T</div>
+<div class="name">Editor in Chief</div>
+<div class="email">edy.saputra@eng.unri.ac.id</div>
+</div>
+<div class="col-md-4  col-xs-4 clearfix"><img src="/public/site/images/admin/iswadi-hr.jpg">&nbsp;&nbsp;</div>
+<div class="col-md-8  col-xs-8 profile">
+<div class="name">Dr. Iswadi Hasyim Rosma,&nbsp;ST, MT, MIEEE</div>
+<div class="name">Vice Editor</div>
+<div class="email">iswadi.hr@lecturer.unri.ac.id</div>
+</div>
+<!--
+<div class="col-md-4  col-xs-4 clearfix"><img src="/public/site/images/admin/Ridwan.jpg" /> </div>
+<div class="col-md-8  col-xs-8 profile">
+<div class="name">Ridwan, Ph.D, Aff. M. ASCE</div>
+<div class="name">Production Manager</div>
+<div class="email">ridwan@eng.unri.ac.id</div>
+</div>--> <br><!-- add another editor profile below -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="col-md-8  col-xs-8 profile">
+<h1>Download</h1>
+<div class="col-md-4 col-xs-4"><a title="Author information pack" href="https://jamt.ejournal.unri.ac.id/public/site/images/admin/Author_Information_Pack-JAMT-R3.pdf" target="_blank" rel="noopener"><img src="/public/site/images/admin/author_pack.png"></a> &nbsp;</div>
+<div class="col-md-8  col-xs-8 profile">
+<div class="name"><a title="Author Information Pack" href="https://jamt.ejournal.unri.ac.id/public/site/images/admin/Author_Information_Pack-JAMT-R3.pdf" target="_blank" rel="noopener">Author Information Pack</a></div>
+</div>
+<p>&nbsp;</p>
+<div class="editorial_team_block">
+<h1><a title="Citation" href="https://jamt.ejournal.unri.ac.id/index.php/jamt/citation" target="_blank" rel="noopener">Citation</a></h1>
+<div class="col-md-4 col-xs-4"><a title="citation" href="https://jamt.ejournal.unri.ac.id/index.php/jamt/citation" target="_blank" rel="noopener"><img src="/public/site/images/admin/citation-new.png" width="300" height="300"></a> &nbsp;</div>
+<div class="col-md-8  col-xs-8 profile">
+<div class="name">Cited in Google Scholar : <strong>31</strong>, cited in Scopus : <strong>13</strong>. Citation for JAMT can be seen on this <a title="citation" href="https://jamt.ejournal.unri.ac.id/index.php/jamt/citation" target="_blank" rel="noopener">page</a></div>
+</div>
+<!--
+<div class="col-md-4  col-xs-4 clearfix"><img src="/public/site/images/admin/copyright.png" />  </div>
+
+<div class="col-md-8  col-xs-8 profile">
+<div class="name"><a title="Copyright Transfer Agreement" href="https://jamt.ejournal.unri.ac.id/public/site/images/admin/JAMT_copyright_transfer_agreement.doc" target="_blank" rel="noopener">Copyright Transfer Agreement</a></div>
+<div class="name"> </div>
+<div class="email"> </div>
+</div> --> <!-- end of new editor profile --></div>
+</div>
+</div>
+	</div>
+</div>
+<div class="pkp_block block_custom" id="customblock-static_indexing_icon">
+	<h2 class="title pkp_screen_reader">static_indexing_icon</h2>
+	<div class="content">
+		<p style="text-align: center;">Indexed by:</p>
+<p><a href="https://scholar.google.co.id/citations?hl=en&amp;user=rjHCwcMAAAAJ" target="_blank" rel="noopener"><img style="height: 50%;" src="/public/site/images/admin/Google_Scholar2.png"></a></p>
+<p><a href="https://search.crossref.org/?q=+2686-0961&amp;from_ui=yes" target="_blank" rel="noopener"><img src="/public/site/images/admin/crossref2.png"></a></p>
+<p><a href="https://journals.indexcopernicus.com/search/details?id=63626&amp;lang=en" target="_blank" rel="noopener"><img src="/public/site/images/admin/copernicus.jpg"></a></p>
+<p><a title="app.dimensions.ai" href="https://app.dimensions.ai/discover/publication?search_mode=content&amp;and_facet_source_title=jour.1378139" target="_blank" rel="noopener"><img src="/public/site/images/admin/dimensions-395x149.png"></a></p>
+	</div>
+</div>
+<div class="pkp_block block_developed_by">
+	<div class="content">
+		<span class="title">Most read article</span>
+			<ul class="most_read">
+							<li class="most_read_article">
+					<div class="most_read_article_title"><a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/article/view/10">Load modeling techniques in distribution networks: a review</a></div>
+					<div class="most_read_article_journal"><span class="fa fa-eye"></span> 63</div>
+				</li>
+							<li class="most_read_article">
+					<div class="most_read_article_title"><a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/article/view/71">Development of Cork-Bamboo-Latex as An Alternative Composite for Bottles Stoppers</a></div>
+					<div class="most_read_article_journal"><span class="fa fa-eye"></span> 20</div>
+				</li>
+							<li class="most_read_article">
+					<div class="most_read_article_title"><a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/article/view/54">Brine sludge waste from a Chlor-alkali industry: characterization and its application for non-structural and structural construction materials</a></div>
+					<div class="most_read_article_journal"><span class="fa fa-eye"></span> 8</div>
+				</li>
+							<li class="most_read_article">
+					<div class="most_read_article_title"><a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/article/view/72">High-Performance Aqueous Electrolyte Symmetrical Supercapacitor using Porous Carbon Derived Cassava Peel Waste</a></div>
+					<div class="most_read_article_journal"><span class="fa fa-eye"></span> 5</div>
+				</li>
+							<li class="most_read_article">
+					<div class="most_read_article_title"><a href="https://jamt.ejournal.unri.ac.id/index.php/jamt/article/view/22">Synthesis of Calcium Silicate Hydrate Compounds From Wet Flue Gas Desulfurization (FGD) Waste</a></div>
+					<div class="most_read_article_journal"><span class="fa fa-eye"></span> 4</div>
+				</li>
+						</ul>
+	</div>
+</div>
+<div class="pkp_block block_custom" id="customblock-twitter_feed">
+	<h2 class="title pkp_screen_reader">twitter_feed</h2>
+	<div class="content">
+		<!--<p><a class="twitter-timeline" href="https://twitter.com/JamtJournal?ref_src=twsrc%5Etfw">Tweets by JAMT Journal</a></p>-->
+<p><a class="twitter-timeline" href="https://twitter.com/JamtJournal" data-tweet-limit="3"> Tweets by @Jamt Journal </a></p>
+	</div>
+</div>
+<div class="pkp_block block_custom" id="customblock-header-carousel">
+	<h2 class="title pkp_screen_reader">header-carousel</h2>
+	<div class="content">
+		<p><img src="/public/site/images/admin/header-1.jpg"></p>
+<blockquote>
+<p><span style="color: black;">The scientist discovers a new type of material or energy and the engineer discovers a new use for it (Gordon Lindsay Glegg)</span></p>
+</blockquote>
+<p>&nbsp;<img src="/public/site/images/admin/header-2.jpg"></p>
+<blockquote>
+<p>&nbsp;<span style="color: white;">Scientists study the world as it is; engineers create the world that has never been (Theodore von Karman)</span></p>
+</blockquote>
+<p><img src="/public/site/images/admin/header-3.jpg"></p>
+<blockquote>
+<p><span style="color: red;">The ideal engineer is a composite. He is not a scientist, he is not a mathematician, he is not a sociologist or a writer; but he may use the knowledge and techniques of any or all of these disciplines in solving engineering problems&nbsp; (Nathan W. Dougherty)</span></p>
+</blockquote>
+	</div>
+</div>
+
+			</aside><!-- pkp_sidebar.left -->
+				</div><!-- pkp_structure_content -->
+
+	
+
+	<div class="container list_of_index">
+		<div class="col-md-12 indexed_by hidden">
+		
+		</div>
+	</div>
+
+
+	<div class="footer_border hidden"></div>
+	<footer id="footer" class="footer hidden" role="contentinfo">
+		
+
+
+
+		<div class="container-fluid">
+
+			<div class="row">
+				
+								
+			
+				
+									<div class="col-md-4"><img src="/public/site/images/admin/footer.png">
+<div class="col-md-4">e-ISSN : <a href="http://issn.pdii.lipi.go.id/issn.cgi?daftar&amp;1551933930&amp;1&amp;&amp;2019" target="_blank" rel="noopener">2686-0961</a></div>
+<div class="col-md-4">&nbsp;</div>
+</div>
+<div class="col-md-4">
+<h4><em class="fa fa-home"> &nbsp;</em> Address</h4>
+<address>Building C, Faculty of Engineering<br>Universitas Riau, Pekanbaru, Indonesia, 28293</address></div>
+<div class="col-md-4 contact_detail">
+<h4><em class="fa fa-envelope-o"> &nbsp; </em> Contact Info</h4>
+<div class="item-contact">
+<div>jamt@eng.unri.ac.id</div>
+<div class="col-md-4">Our Visitors</div>
+<div class="statcounter"><a title="Web Analytics Made Easy -StatCounter" href="http://statcounter.com/p12199545/summary/?guest=1" target="_blank" rel="noopener"><img class="statcounter" src="https://c.statcounter.com/12199545/0/a9702b44/0/" alt="Web Analytics Made Easy - StatCounter"></a></div>
+</div>
+</div>
+				
+				<span class="hidden"> Ver 1.4 : openjournaltheme.com </span>
+				
+			</div> <!-- .row -->
+		</div><!-- .container -->
+	</footer>
+</div><!-- pkp_structure_page -->
+
+<script src="https://jamt.ejournal.unri.ac.id/lib/pkp/lib/vendor/components/jquery/jquery.min.js?v=3.3.0.7" type="text/javascript"></script><script src="https://jamt.ejournal.unri.ac.id/lib/pkp/lib/vendor/components/jqueryui/jquery-ui.min.js?v=3.3.0.7" type="text/javascript"></script><script src="https://jamt.ejournal.unri.ac.id/lib/pkp/js/lib/jquery/plugins/jquery.tag-it.js?v=3.3.0.7" type="text/javascript"></script><script src="https://jamt.ejournal.unri.ac.id/plugins/themes/jamt/bootstrap/js/bootstrap.min.js?v=3.3.0.7" type="text/javascript"></script><script src="https://jamt.ejournal.unri.ac.id/plugins/themes/jamt/js/app.js?v=3.3.0.7" type="text/javascript"></script><script src="https://jamt.ejournal.unri.ac.id/plugins/themes/jamt/js/theme.min.js?v=3.3.0.7" type="text/javascript"></script><script src="https://jamt.ejournal.unri.ac.id/plugins/themes/jamt/js/lib/readmore.min.js?v=3.3.0.7" type="text/javascript"></script><script src="https://jamt.ejournal.unri.ac.id/plugins/themes/jamt/js/sticky.js?v=3.3.0.7" type="text/javascript"></script><script src="https://jamt.ejournal.unri.ac.id/plugins/themes/jamt/js/headroom.min.js?v=3.3.0.7" type="text/javascript"></script><script src="https://jamt.ejournal.unri.ac.id/plugins/themes/jamt/js/jQuery.headroom.js?v=3.3.0.7" type="text/javascript"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js?v=3.3.0.7" type="text/javascript"></script><script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-135682633-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>
