@@ -1,4 +1,5 @@
-example of go-lang code:
+example of Go-lang code:
 this include
-server setup
-api 
+Server setup
+Api 
+Connecting with Mongo db using the Go-lang
